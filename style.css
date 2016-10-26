@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Grotex';
+  src: url('./fonts/Grotex-Regular.otf') format('opentype');
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Grotex', Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: 2.6vw;
+  letter-spacing: 0.09vw;
+  line-height: 3vw;
+}
+.ts{
+  font-size: 1.73vw;
+  letter-spacing: 0.045vw;
+  line-height: 2vw;
+}
+#left-block, #right-block{
+  display: inline-block;
+  float: left;
+}
+#left-block{
+  height: 100vh;
+  width: 70vw;
+  padding: 1vw;
+  background: #DCDDDE;
+  border-right: 0.3vw solid #000;
+  overflow-y: scroll;
+}
+.intro{
+  margin-bottom: 15vw;
+}
+#contact-button{
+  position: fixed;
+  bottom: 0;
+  width: 69.7vw;
+  background-color: #000;
+  height: 4vw;
+  color: #fff;
+  cursor: pointer;
+}
+#contact-button p{
+  text-align: center;
+  top: 2vw;
+  position: relative;
+  transform: translateY(-50%);
+}
+#contact-button:hover{
+  background-color: #fff;
+  color: #000;
+}
+#read-on{
+  border-bottom: 0.15vw solid #000;
+  cursor: pointer;
+}
+#read-on:hover{
+  border-bottom: none;
+}
+
+
+#right-block{
+  height: 100vh;
+  width: 30vw;
+  background: #2AFD82;
+  overflow-y: scroll;
+}
+ol{
+  list-style: none;
+}
+ol li{
+  width: 100%;
+  height: 30vh;
+  background: red;
+  border-bottom: 0.3vw solid #000;
+}
