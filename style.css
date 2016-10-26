@@ -23,13 +23,40 @@
 #left-block{
   height: 100vh;
   width: 70vw;
-  padding: 1vw;
+  padding: 1vw 1vw 15vw 1vw;
   background: #DCDDDE;
   border-right: 0.3vw solid #000;
   overflow-y: scroll;
 }
 .intro{
   margin-bottom: 15vw;
+}
+.bm{
+  margin-bottom: 2.5vw;
+}
+.folio-list{
+  width: 70%;
+}
+.c-link, .c-link-hov{
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: 2px 0 0 #DCDDDE, -2px 0 0 #DCDDDE;
+  background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
+  background-repeat: repeat-x;
+  background-position: 0px 88%;
+  -webkit-background-size: 100% 1px;
+  background-size: 100% 2px;
+}
+.c-link-hov{
+  cursor: pointer;
+}
+.c-link-hov:hover{
+  background-image: none;
+}
+.title-arrow{
+  display: inline-block;
+  margin-left: 0.6vw;
+  font-size: 2vw;
 }
 #contact-button{
   position: fixed;
@@ -51,11 +78,7 @@
   color: #000;
 }
 #read-on{
-  border-bottom: 0.15vw solid #000;
   cursor: pointer;
-}
-#read-on:hover{
-  border-bottom: none;
 }
 
 
