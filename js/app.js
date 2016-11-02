@@ -30,4 +30,17 @@ $(document).ready(function() {
 
   });
 
+  $('#left-block').scroll(function(){
+
+    var wH = $(window).height();
+    var hA = $('#left-block').height() - wH;
+    var hB = $('#right-block').height() - wH;
+
+    console.log(hA);
+    console.log(hB);
+
+  });
+
+
+
 });
