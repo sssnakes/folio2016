@@ -23,10 +23,19 @@
 #left-block{
   height: 100vh;
   width: 70vw;
-  padding: 1vw 1vw 15vw 1vw;
   background: #DCDDDE;
   border-right: 0.3vw solid #000;
   overflow-y: scroll;
+}
+#left-box{
+  height: auto;
+  min-height: 100vh;
+}
+#text-list{
+  padding: 1vw 1vw 10vw 1vw;
+}
+#left-box, .image-list{
+  height: auto;
 }
 .intro{
   margin-bottom: 15vw;
@@ -34,6 +43,7 @@
 .bm{
   margin-bottom: 2.5vw;
 }
+
 .folio-list{
   width: 70%;
 }
@@ -85,7 +95,7 @@
 #right-block{
   height: 100vh;
   width: 30vw;
-  background: #2AFD82;
+  background: #000;
   overflow-y: scroll;
 }
 ol{
