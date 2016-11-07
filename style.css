@@ -26,16 +26,13 @@
   background: #DCDDDE;
   border-right: 0.3vw solid #000;
   overflow-y: scroll;
-}
-#left-box{
-  height: auto;
-  min-height: 100vh;
-}
-#text-list{
   padding: 1vw 1vw 10vw 1vw;
 }
-#left-box, .image-list{
-  height: auto;
+#right-block{
+  height: 100vh;
+  width: 30vw;
+  background: #000;
+  overflow-y: scroll;
 }
 .intro{
   margin-bottom: 15vw;
@@ -59,9 +56,10 @@
 }
 .c-link-hov{
   cursor: pointer;
+  transition: .1s;
 }
 .c-link-hov:hover{
-  background-image: none;
+  margin-right: 0.75vw;
 }
 .title-arrow{
   display: inline-block;
@@ -91,13 +89,17 @@
   cursor: pointer;
 }
 
-
-#right-block{
+.tabber-image{
+  display: none;
+  position: fixed;
+  width: 100vw;
   height: 100vh;
-  width: 30vw;
   background: #000;
-  overflow-y: scroll;
+  z-index: 100;
+  background-image: url(./images/assets/tab-white.svg);
+  background-repeat: no-repeat;
 }
+
 ol{
   list-style: none;
 }
@@ -106,6 +108,14 @@ ol li{
   height: 30vh;
   background: red;
   border-bottom: 0.3vw solid #000;
+}
+.image-list li p{
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 
